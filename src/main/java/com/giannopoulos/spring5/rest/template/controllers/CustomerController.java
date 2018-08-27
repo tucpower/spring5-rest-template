@@ -2,6 +2,7 @@ package com.giannopoulos.spring5.rest.template.controllers;
 
 import com.giannopoulos.spring5.rest.template.domain.Customer;
 import com.giannopoulos.spring5.rest.template.services.CustomerService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +13,9 @@ import java.util.List;
 public class CustomerController {
 
     public static final String BASE_URL = "/api/v1/customers";
+
+    @Value("${test.value}")
+    private String test_value;
 
     private final CustomerService customerService;
 
@@ -33,5 +37,10 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.CREATED)
     public Customer saveCustomer(@RequestBody Customer customer) {
         return customerService.saveCustomer(customer);
+    }
+
+    @GetMapping("/property")
+    public void accessProperty() {
+        System.out.println(test_value);
     }
 }
