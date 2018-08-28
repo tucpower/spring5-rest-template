@@ -1,5 +1,7 @@
 package com.giannopoulos.spring5.rest.template.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -13,6 +15,7 @@ public class Notes {
     private String recipeNotes;
 
     @OneToOne
+    @JsonIgnore
     private Recipe recipe;
 
     public Long getId() {
