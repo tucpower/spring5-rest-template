@@ -3,7 +3,6 @@ package com.giannopoulos.spring5.rest.template.controllers;
 import com.giannopoulos.spring5.rest.template.domain.Recipe;
 import com.giannopoulos.spring5.rest.template.services.ApiService;
 import com.giannopoulos.spring5.rest.template.services.RecipeService;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,9 +13,6 @@ import java.util.List;
 public class RecipeController {
 
     public static final String BASE_URL = "/api/v1/recipies";
-
-    @Value("${test.value}")
-    private String test_value;
 
     private final RecipeService recipeService;
     private final ApiService apiService;
@@ -43,10 +39,8 @@ public class RecipeController {
     }
 
     @GetMapping("/test")
-    public List<Recipe> testController() {
+    public void testController() {
 
-        System.out.println(test_value);
-
-        return apiService.getAllRecipies();
+        apiService.testRestTemplate();
     }
 }
