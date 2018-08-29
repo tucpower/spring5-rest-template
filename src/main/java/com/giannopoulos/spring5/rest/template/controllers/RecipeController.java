@@ -24,18 +24,18 @@ public class RecipeController {
     }
 
     @GetMapping
-    public List<Recipe> getAllCustomers() {
+    public List<Recipe> getAllRecipies() {
         return recipeService.findAllRecipes();
     }
 
     @GetMapping("/{id}")
-    public Recipe getCustomerById(@PathVariable Long id) {
+    public Recipe getRecipeById(@PathVariable Long id) {
         return recipeService.findRecipeById(id);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Recipe saveCustomer(@RequestBody Recipe recipe) {
+    public Recipe saveRecipe(@RequestBody Recipe recipe) {
         return recipeService.saveRecipe(recipe);
     }
 
