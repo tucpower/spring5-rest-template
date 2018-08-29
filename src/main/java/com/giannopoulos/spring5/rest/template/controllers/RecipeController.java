@@ -1,6 +1,7 @@
 package com.giannopoulos.spring5.rest.template.controllers;
 
 import com.giannopoulos.spring5.rest.template.domain.Recipe;
+import com.giannopoulos.spring5.rest.template.services.ApiService;
 import com.giannopoulos.spring5.rest.template.services.RecipeService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -18,9 +19,11 @@ public class RecipeController {
     private String test_value;
 
     private final RecipeService recipeService;
+    private final ApiService apiService;
 
-    public RecipeController(RecipeService recipeService) {
+    public RecipeController(RecipeService recipeService, ApiService apiService) {
         this.recipeService = recipeService;
+        this.apiService = apiService;
     }
 
     @GetMapping
@@ -39,8 +42,11 @@ public class RecipeController {
         return recipeService.saveRecipe(recipe);
     }
 
-    @GetMapping("/property")
-    public void accessProperty() {
+    @GetMapping("/test")
+    public List<Recipe> testController() {
+
         System.out.println(test_value);
+
+        return apiService.getAllRecipies();
     }
 }
