@@ -1,5 +1,7 @@
 package com.giannopoulos.spring5.rest.template.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -13,6 +15,7 @@ public class Category {
     private String description;
 
     @ManyToMany(mappedBy = "categories")
+    @JsonIgnore
     private List<Recipe> recipes;
 
     public Long getId() {

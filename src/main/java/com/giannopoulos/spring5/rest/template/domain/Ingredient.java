@@ -1,5 +1,7 @@
 package com.giannopoulos.spring5.rest.template.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 
@@ -14,6 +16,7 @@ public class Ingredient {
     private BigDecimal amount;
 
     @ManyToOne
+    @JsonIgnore
     private Recipe recipe;
 
     public Long getId() {
