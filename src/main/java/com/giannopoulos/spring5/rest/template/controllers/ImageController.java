@@ -1,6 +1,6 @@
 package com.giannopoulos.spring5.rest.template.controllers;
 
-import com.giannopoulos.spring5.rest.template.domain.Recipe;
+import com.giannopoulos.spring5.rest.template.api.v1.model.RecipeDTO;
 import com.giannopoulos.spring5.rest.template.services.ImageService;
 import com.giannopoulos.spring5.rest.template.services.RecipeService;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
@@ -35,13 +35,13 @@ public class ImageController {
     @GetMapping("{id}/recipeimage")
     public void renderImageFromDB(@PathVariable String id, HttpServletResponse response) throws IOException {
 
-        Recipe recipe = recipeService.findRecipeById(Long.valueOf(id));
+        RecipeDTO recipeDTO = recipeService.findRecipeById(Long.valueOf(id));
 
-        if (recipe.getImage() != null) {
-            byte[] byteArray = new byte[recipe.getImage().length];
+        if (recipeDTO.getImage() != null) {
+            byte[] byteArray = new byte[recipeDTO.getImage().length];
             int i = 0;
 
-            for (Byte wrappedByte : recipe.getImage()){
+            for (Byte wrappedByte : recipeDTO.getImage()){
                 byteArray[i++] = wrappedByte; //auto unboxing
             }
 

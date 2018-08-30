@@ -1,12 +1,18 @@
 package com.giannopoulos.spring5.rest.template.services;
 
-import com.giannopoulos.spring5.rest.template.domain.Recipe;
+import com.giannopoulos.spring5.rest.template.api.v1.model.RecipeDTO;
 
 import java.util.List;
 
 public interface RecipeService {
 
-    Recipe findRecipeById(Long id);
-    List<Recipe> findAllRecipes();
-    Recipe saveRecipe(Recipe recipe);
+    List<RecipeDTO> findAllRecipes();
+
+    RecipeDTO findRecipeById(Long id);
+
+    RecipeDTO saveRecipe(RecipeDTO recipeDTO);
+
+    RecipeDTO updateRecipe(Long id, RecipeDTO recipeDTO);
+
+    void deleteRecipeById(Long id);
 }

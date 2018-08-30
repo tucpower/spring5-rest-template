@@ -1,37 +1,31 @@
-package com.giannopoulos.spring5.rest.template.domain;
+package com.giannopoulos.spring5.rest.template.api.v1.model;
 
-import javax.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.giannopoulos.spring5.rest.template.domain.Category;
+import com.giannopoulos.spring5.rest.template.domain.Difficulty;
+import com.giannopoulos.spring5.rest.template.domain.Ingredient;
+import com.giannopoulos.spring5.rest.template.domain.Notes;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
-@Entity
-public class Recipe {
+public class RecipeDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String description;
     private Integer servings;
-
-    @Enumerated(value = EnumType.STRING)
     private Difficulty difficulty;
 
-    @Lob
+    @JsonIgnore
     private Byte[] image;
 
-    @OneToOne(cascade = CascadeType.ALL)
     private Notes notes;
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
     private List<Ingredient> ingredients = new ArrayList<>();
-
-    @ManyToMany
-    @JoinTable(name = "recipe_category",
-            joinColumns = @JoinColumn(name = "recipe_id"),
-            inverseJoinColumns = @JoinColumn(name = "category_id"))
     private List<Category> categories = new ArrayList<>();
+
+    @JsonProperty("recipe_url")
+    private String recipeUrl;
 
     public Long getId() {
         return id;
@@ -57,6 +51,14 @@ public class Recipe {
         this.servings = servings;
     }
 
+    public Difficulty getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(Difficulty difficulty) {
+        this.difficulty = difficulty;
+    }
+
     public Byte[] getImage() {
         return image;
     }
@@ -71,13 +73,6 @@ public class Recipe {
 
     public void setNotes(Notes notes) {
         this.notes = notes;
-        notes.setRecipe(this);
-    }
-
-    public Recipe addIngredient(Ingredient ingredient) {
-        ingredient.setRecipe(this);
-        this.ingredients.add(ingredient);
-        return this;
     }
 
     public List<Ingredient> getIngredients() {
@@ -85,24 +80,7 @@ public class Recipe {
     }
 
     public void setIngredients(List<Ingredient> ingredients) {
-        ingredients
-                .stream()
-                .map(ingredient -> {
-                    ingredient.setRecipe(this);
-                    this.ingredients.add(ingredient);
-                    return ingredient;
-                })
-                .collect(Collectors.toList());;
-
-        //this.ingredients = ingredients;
-    }
-
-    public Difficulty getDifficulty() {
-        return difficulty;
-    }
-
-    public void setDifficulty(Difficulty difficulty) {
-        this.difficulty = difficulty;
+        this.ingredients = ingredients;
     }
 
     public List<Category> getCategories() {
@@ -111,5 +89,13 @@ public class Recipe {
 
     public void setCategories(List<Category> categories) {
         this.categories = categories;
+    }
+
+    public String getRecipeUrl() {
+        return recipeUrl;
+    }
+
+    public void setRecipeUrl(String recipeUrl) {
+        this.recipeUrl = recipeUrl;
     }
 }

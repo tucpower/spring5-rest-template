@@ -1,27 +1,27 @@
 Section: 1              -----       NOTHING     -----
 Section: 2              -----       NOTHING     -----
 Section: 3              -----       NOTHING     -----
-Section: 4              -----       BOOKMARKS   -----
+Section: 4              -----       BOOKMARKS   -----   COMMENTS
 Section: 5              -----       NOTHING     -----
-Section: 6              -----       BOOKMARKS   -----
-Section: 7              -----       BOOKMARKS   -----
-Section: 8              -----       BOOKMARKS   -----
+Section: 6              -----       BOOKMARKS   -----   COMMENTS
+Section: 7              -----       BOOKMARKS   -----   COMMENTS
+Section: 8              -----       BOOKMARKS   -----   COMMENTS
 Section: 9              -----       NOTHING     -----
 Section: 10
-Section: 11             -----       BOOKMARKS   -----
+Section: 11             -----       BOOKMARKS   -----   COMMENTS
 Section: 12
 Section: 13
 Section: 14
 Section: 15
 Section: 16             -----       NOTHING     -----
 Section: 17             -----       NOTHING     -----
-Section: 18             -----       BOOKMARKS   -----
+Section: 18             -----       BOOKMARKS   -----   COMMENTS
 Section: 19
 Section: 20
 Section: 21
 Section: 22
-Section: 23             -----       BOOKMARKS   -----
-Section: 24             -----       BOOKMARKS   -----
+Section: 23             -----       BOOKMARKS   -----   COMMENTS
+Section: 24             -----       BOOKMARKS   -----   MapStruct,
 Section: 25
 Section: 26
 Section: 27
