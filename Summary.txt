@@ -7,25 +7,25 @@ Section: 6              -----       BOOKMARKS   -----   Access application.prope
 Section: 7              -----       BOOKMARKS   -----   Axis TCPMon, Configure IntelliJ for Spring Boot Development Tools
 Section: 8              -----       BOOKMARKS   -----   JPA Relationships (1-1, 1-*, *-1, *-*, Enum), Custom JPA Queries
 Section: 9              -----       NOTHING
-Section: 10
+Section: 10             -----       PENDING     -----
 Section: 11             -----       BOOKMARKS   -----   Save/Retrieve Images to/from DB
-Section: 12
-Section: 13
-Section: 14
-Section: 15
+Section: 12             -----       PENDING     -----
+Section: 13             -----       PENDING     -----
+Section: 14             -----       PENDING     -----
+Section: 15             -----       PENDING     -----
 Section: 16             -----       NOTHING
 Section: 17             -----       NOTHING
 Section: 18             -----       BOOKMARKS   -----   MySQL Configuration, Schema Generation from Model
-Section: 19
-Section: 20
-Section: 21
-Section: 22
+Section: 19             -----       PENDING     -----
+Section: 20             -----       PENDING     -----
+Section: 21             -----       PENDING     -----
+Section: 22             -----       PENDING     -----
 Section: 23             -----       BOOKMARKS   -----   RestTemplate Examples, URI Components Builder
 Section: 24             -----       BOOKMARKS   -----   MapStruct, Custom Exceptions, REST Controller
 Section: 25             -----       BOOKMARKS   -----   Configure Swagger, Swagger UI, Swagger Meta, Custom Documentation
-Section: 26
-Section: 27             -----       BOOKMARKS   -----
-Section: 28
-Section: 29
+Section: 26             -----       PENDING     -----
+Section: 27             -----       BOOKMARKS   -----   XML with Spring,
+Section: 28             -----       PENDING     -----
+Section: 29             -----       PENDING     -----
 Section: 30             -----       BOOKMARKS   -----
 Section: 31             -----       BOOKMARKS   -----
