@@ -6,6 +6,7 @@ import com.giannopoulos.spring5.rest.template.domain.Category;
 import com.giannopoulos.spring5.rest.template.domain.Difficulty;
 import com.giannopoulos.spring5.rest.template.domain.Ingredient;
 import com.giannopoulos.spring5.rest.template.domain.Notes;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +14,13 @@ import java.util.List;
 public class RecipeDTO {
 
     private Long id;
+
+    @ApiModelProperty(value = "This is the description", required = true)
     private String description;
+
+    @ApiModelProperty(value = "These are the servings", required = true)
     private Integer servings;
+
     private Difficulty difficulty;
 
     @JsonIgnore

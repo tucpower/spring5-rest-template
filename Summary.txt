@@ -1,31 +1,31 @@
-Section: 1              -----       NOTHING     -----
-Section: 2              -----       NOTHING     -----
-Section: 3              -----       NOTHING     -----
-Section: 4              -----       BOOKMARKS   -----   COMMENTS
-Section: 5              -----       NOTHING     -----
-Section: 6              -----       BOOKMARKS   -----   COMMENTS
-Section: 7              -----       BOOKMARKS   -----   COMMENTS
-Section: 8              -----       BOOKMARKS   -----   COMMENTS
-Section: 9              -----       NOTHING     -----
+Section: 1              -----       NOTHING
+Section: 2              -----       NOTHING
+Section: 3              -----       NOTHING
+Section: 4              -----       BOOKMARKS   -----   Custom Banner
+Section: 5              -----       NOTHING
+Section: 6              -----       BOOKMARKS   -----   Access application.properties values
+Section: 7              -----       BOOKMARKS   -----   Axis TCPMon, Configure IntelliJ for Spring Boot Development Tools
+Section: 8              -----       BOOKMARKS   -----   JPA Relationships (1-1, 1-*, *-1, *-*, Enum), Custom JPA Queries
+Section: 9              -----       NOTHING
 Section: 10
-Section: 11             -----       BOOKMARKS   -----   COMMENTS
+Section: 11             -----       BOOKMARKS   -----   Save/Retrieve Images to/from DB
 Section: 12
 Section: 13
 Section: 14
 Section: 15
-Section: 16             -----       NOTHING     -----
-Section: 17             -----       NOTHING     -----
-Section: 18             -----       BOOKMARKS   -----   COMMENTS
+Section: 16             -----       NOTHING
+Section: 17             -----       NOTHING
+Section: 18             -----       BOOKMARKS   -----   MySQL Configuration, Schema Generation from Model
 Section: 19
 Section: 20
 Section: 21
 Section: 22
-Section: 23             -----       BOOKMARKS   -----   COMMENTS
-Section: 24             -----       BOOKMARKS   -----   MapStruct,
-Section: 25
+Section: 23             -----       BOOKMARKS   -----   RestTemplate Examples, URI Components Builder
+Section: 24             -----       BOOKMARKS   -----   MapStruct, Custom Exceptions, REST Controller
+Section: 25             -----       BOOKMARKS   -----   Configure Swagger, Swagger UI, Swagger Meta, Custom Documentation
 Section: 26
-Section: 27
+Section: 27             -----       BOOKMARKS   -----
 Section: 28
 Section: 29
-Section: 30
-Section: 31
+Section: 30             -----       BOOKMARKS   -----
+Section: 31             -----       BOOKMARKS   -----
