@@ -1,6 +1,6 @@
 package com.giannopoulos.spring5.rest.template.controllers;
 
-import com.giannopoulos.spring5.rest.template.api.v1.model.RecipeDTO;
+import com.giannopoulos.spring5.rest.template.model.RecipeDTO;
 import com.giannopoulos.spring5.rest.template.services.ImageService;
 import com.giannopoulos.spring5.rest.template.services.RecipeService;
 import org.apache.tomcat.util.http.fileupload.IOUtils;

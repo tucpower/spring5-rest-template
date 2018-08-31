@@ -1,6 +1,7 @@
 package com.giannopoulos.spring5.rest.template.services;
 
-import com.giannopoulos.spring5.rest.template.api.v1.model.RecipeDTO;
+
+import com.giannopoulos.spring5.rest.template.model.RecipeDTO;
 
 import java.util.List;
 

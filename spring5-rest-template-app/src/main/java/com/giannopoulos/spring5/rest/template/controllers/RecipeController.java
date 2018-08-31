@@ -1,7 +1,7 @@
 package com.giannopoulos.spring5.rest.template.controllers;
 
-import com.giannopoulos.spring5.rest.template.api.v1.model.RecipeDTO;
-import com.giannopoulos.spring5.rest.template.api.v1.model.RecipeListDTO;
+import com.giannopoulos.spring5.rest.template.model.RecipeDTO;
+import com.giannopoulos.spring5.rest.template.model.RecipeListDTO;
 import com.giannopoulos.spring5.rest.template.services.ApiService;
 import com.giannopoulos.spring5.rest.template.services.RecipeService;
 import io.swagger.annotations.Api;
@@ -27,7 +27,9 @@ public class RecipeController {
     @ApiOperation(value = "This will get a list of recipes.", notes = "There are some notes about the API.")
     @GetMapping
     public RecipeListDTO getAllRecipies() {
-        return new RecipeListDTO(recipeService.findAllRecipes());
+        RecipeListDTO recipeListDTO = new RecipeListDTO();
+        recipeListDTO.getRecipes().addAll(recipeService.findAllRecipes());
+        return recipeListDTO;
     }
 
     @GetMapping("/{id}")

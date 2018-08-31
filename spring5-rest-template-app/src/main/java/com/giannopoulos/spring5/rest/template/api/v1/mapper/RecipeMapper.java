@@ -1,7 +1,7 @@
 package com.giannopoulos.spring5.rest.template.api.v1.mapper;
 
-import com.giannopoulos.spring5.rest.template.api.v1.model.RecipeDTO;
 import com.giannopoulos.spring5.rest.template.domain.Recipe;
+import com.giannopoulos.spring5.rest.template.model.RecipeDTO;
 import org.mapstruct.Mapper;
 
 @Mapper

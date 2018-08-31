@@ -1,0 +1,39 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="RecipeListDTO" type="RecipeListDTO"/>
+    <xs:complexType name="Notes">
+        <xs:sequence>
+            <xs:element type="xs:byte" name="id"/>
+            <xs:element type="xs:string" name="recipeNotes"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Ingredient">
+        <xs:sequence>
+            <xs:element type="xs:byte" name="id" minOccurs="0"/>
+            <xs:element type="xs:string" name="description" minOccurs="0"/>
+            <xs:element type="xs:float" name="amount" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Category">
+        <xs:sequence>
+            <xs:element type="xs:byte" name="id" minOccurs="0"/>
+            <xs:element type="xs:string" name="description" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RecipeDTO">
+        <xs:sequence>
+            <xs:element type="xs:byte" name="id" minOccurs="0"/>
+            <xs:element type="xs:string" name="description" minOccurs="0"/>
+            <xs:element type="xs:byte" name="servings" minOccurs="0"/>
+            <xs:element type="xs:string" name="difficulty" minOccurs="0"/>
+            <xs:element type="Notes" name="notes" minOccurs="0"/>
+            <xs:element type="Ingredient" name="ingredients" minOccurs="0"/>
+            <xs:element type="Category" name="categories" minOccurs="0"/>
+            <xs:element type="xs:string" name="recipeUrl" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RecipeListDTO">
+        <xs:sequence>
+            <xs:element type="RecipeDTO" name="recipes" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

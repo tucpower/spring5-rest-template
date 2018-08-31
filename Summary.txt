@@ -24,7 +24,7 @@ Section: 23             -----       BOOKMARKS   -----   RestTemplate Examples, U
 Section: 24             -----       BOOKMARKS   -----   MapStruct, Custom Exceptions, REST Controller
 Section: 25             -----       BOOKMARKS   -----   Configure Swagger, Swagger UI, Swagger Meta, Custom Documentation
 Section: 26             -----       PENDING     -----
-Section: 27             -----       BOOKMARKS   -----   XML with Spring,
+Section: 27             -----       BOOKMARKS   -----   XML with Spring, Multi-Module Project, JAXB
 Section: 28             -----       PENDING     -----
 Section: 29             -----       PENDING     -----
 Section: 30             -----       BOOKMARKS   -----

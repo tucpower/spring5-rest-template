@@ -11,7 +11,7 @@ import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecipeDTO {
+public class RecipeDTOo {
 
     private Long id;
 
