@@ -9,7 +9,7 @@ Section: 8              -----       BOOKMARKS   -----   JPA Relationships (1-1, 
 Section: 9              -----       NOTHING
 Section: 10             -----       PENDING     -----
 Section: 11             -----       BOOKMARKS   -----   Save/Retrieve Images to/from DB
-Section: 12             -----       PENDING     -----
+Section: 12             -----       BOOKMARKS   -----   Error @ResponseStatus for REST
 Section: 13             -----       PENDING     -----
 Section: 14             -----       PENDING     -----
 Section: 15             -----       PENDING     -----
@@ -27,5 +27,5 @@ Section: 26             -----       PENDING     -----
 Section: 27             -----       BOOKMARKS   -----   XML with Spring, Multi-Module Project, JAXB
 Section: 28             -----       PENDING     -----
 Section: 29             -----       PENDING     -----
-Section: 30             -----       BOOKMARKS   -----
-Section: 31             -----       BOOKMARKS   -----
+Section: 30             -----       BOOKMARKS   -----   GitHub
+Section: 31             -----       BOOKMARKS   -----   RESTful Web Services Step by Step Tutorial

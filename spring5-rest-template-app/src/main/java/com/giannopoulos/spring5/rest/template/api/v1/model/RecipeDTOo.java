@@ -11,6 +11,7 @@ import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
 import java.util.List;
 
+/* DEPRECATED */
 public class RecipeDTOo {
 
     private Long id;

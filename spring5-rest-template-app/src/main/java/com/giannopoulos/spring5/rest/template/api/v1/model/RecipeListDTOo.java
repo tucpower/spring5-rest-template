@@ -2,6 +2,7 @@ package com.giannopoulos.spring5.rest.template.api.v1.model;
 
 import java.util.List;
 
+/* DEPRECATED */
 public class RecipeListDTOo {
 
     private List<RecipeDTOo> recipies;

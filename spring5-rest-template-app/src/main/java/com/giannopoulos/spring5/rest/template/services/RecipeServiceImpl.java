@@ -3,6 +3,7 @@ package com.giannopoulos.spring5.rest.template.services;
 import com.giannopoulos.spring5.rest.template.api.v1.mapper.RecipeMapper;
 import com.giannopoulos.spring5.rest.template.controllers.RecipeController;
 import com.giannopoulos.spring5.rest.template.domain.Recipe;
+import com.giannopoulos.spring5.rest.template.exceptions.NotFoundException;
 import com.giannopoulos.spring5.rest.template.model.RecipeDTO;
 import com.giannopoulos.spring5.rest.template.repositories.RecipeRepository;
 import org.springframework.stereotype.Service;
@@ -45,7 +46,7 @@ public class RecipeServiceImpl implements RecipeService {
                     recipeDTO.setRecipeUrl(getRecipeUrl(id));
                     return recipeDTO;
                 })
-                .orElseThrow(RuntimeException::new);
+                .orElseThrow(NotFoundException::new);
     }
 
     @Override
