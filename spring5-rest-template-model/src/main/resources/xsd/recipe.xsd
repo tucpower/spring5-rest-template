@@ -25,9 +25,10 @@
             <xs:element type="xs:string" name="description" minOccurs="0"/>
             <xs:element type="xs:byte" name="servings" minOccurs="0"/>
             <xs:element type="xs:string" name="difficulty" minOccurs="0"/>
+            <xs:element type="xs:base64Binary" name="image" minOccurs="0"/>
             <xs:element type="Notes" name="notes" minOccurs="0"/>
-            <xs:element type="Ingredient" name="ingredients" minOccurs="0"/>
-            <xs:element type="Category" name="categories" minOccurs="0"/>
+            <xs:element type="Ingredient" name="ingredients" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element type="Category" name="categories" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element type="xs:string" name="recipeUrl" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
