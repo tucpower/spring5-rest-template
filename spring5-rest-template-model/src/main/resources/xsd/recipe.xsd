@@ -2,7 +2,7 @@
     <xs:element name="RecipeListDTO" type="RecipeListDTO"/>
     <xs:complexType name="Notes">
         <xs:sequence>
-            <xs:element type="xs:byte" name="id"/>
+            <xs:element type="xs:byte" name="id" minOccurs="0"/>
             <xs:element type="xs:string" name="recipeNotes"/>
         </xs:sequence>
     </xs:complexType>

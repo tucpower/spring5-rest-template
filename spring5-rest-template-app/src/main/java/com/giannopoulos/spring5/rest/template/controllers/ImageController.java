@@ -16,7 +16,7 @@ import java.io.InputStream;
 @RequestMapping(ImageController.BASE_URL)
 public class ImageController {
 
-    public static final String BASE_URL = "/api/v1/recipies";
+    public static final String BASE_URL = "/api/v1/recipes";
 
     private final ImageService imageService;
     private final RecipeService recipeService;
