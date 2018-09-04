@@ -16,8 +16,6 @@ public class RecipeServiceImpl implements RecipeService {
 
     private final RecipeMapper recipeMapper;
     private final RecipeRepository recipeRepository;
-    //private final CategoryRepository categoryRepository;
-    //private final Ingredient
 
     public RecipeServiceImpl(RecipeMapper recipeMapper, RecipeRepository recipeRepository) {
         this.recipeMapper = recipeMapper;
